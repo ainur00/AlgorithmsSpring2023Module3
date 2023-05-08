@@ -11,7 +11,7 @@ std::string GetString(const std::vector<uint64_t>& pValues) {
         if (pValues[i] == 0) {
             uint64_t pValuesMaxDiff = pValues[i - 1] - pValues[i] + 1;
             // if pValues[i] == 0 and i != 0, then str[i] != 'a'
-            for (int8_t symbol = 98; symbol <= 123; ++symbol) {
+            for (int8_t symbol = 98; symbol <= 122; ++symbol) {
                 bool isFind = true;
                 str.push_back(symbol);
                 for (uint64_t pValuesDiff = 1; pValuesDiff <= pValuesMaxDiff; ++pValuesDiff)
