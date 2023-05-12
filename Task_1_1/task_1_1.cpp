@@ -33,8 +33,8 @@ std::vector<uint32_t> GetOverlaps(const std::string& pattern, const std::string&
 }
 
 int32_t main() {
-    std::string pattern = "";
-    std::string text = "";
+    std::string pattern;
+    std::string text;
     std::cin >> pattern >> text;
     std::vector<uint32_t> overlaps = GetOverlaps(pattern, text);
     for (uint32_t overlap : overlaps)
